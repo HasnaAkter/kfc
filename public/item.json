@@ -1,0 +1,225 @@
+[
+   
+    {
+        "_id": 1,
+        "name": "Basket S Combo",
+        "image": "https://eda.yandex/images/3456802/c099625988d0ae0c9ac7977dc3854531-216x188.jpeg",
+        "category": "What's new",
+        "price": 5700
+    },
+    {
+        "_id": 2,
+        "name": "Cheese sauce",
+        "image": "https://eda.yandex/images/3456802/c099625988d0ae0c9ac7977dc3854531-216x188.jpeg",
+        "category": "Popular",
+        "price": 500
+    },
+    {
+        "_id": 3,
+        "name": " Basket Kroketsov",
+        "image": "https://eda.yandex/images/3456802/c099625988d0ae0c9ac7977dc3854531-216x188.jpeg",
+        "category": "New items",
+        "price": 5400
+    },
+    
+    {
+        "_id": 4,
+        "name": "Standard croquettes",
+        "image": "https://eda.yandex/images/3378693/a139ef8ba352dfbe7fac9437806a8322-216x188.jpeg",
+        "category": "Boxes",
+        "price": 2800
+    },
+    {
+        "_id": 5,
+        "name": "Large croquettes",
+        "image": "https://eda.yandex/images/3378693/a139ef8ba352dfbe7fac9437806a8322-216x188.jpeg",
+        "category": "Combo Baskets",
+        "price": 9300
+    },
+    {
+        "_id": 6,
+        "name": "Sanders Basket Combo",
+        "image": "https://eda.yandex/images/3378693/a139ef8ba352dfbe7fac9437806a8322-216x188.jpeg",
+        "category": "Juicy chicken",
+        "price": 700
+    },
+    {
+        "_id": 7,
+        "name": "Boxmaster Combo",
+        "image": "https://eda.yandex/images/3456802/c099625988d0ae0c9ac7977dc3854531-300x300.jpeg",
+        "category": "Snacks",
+        "price": 200
+    },
+    
+    {
+        "_id": 8,
+        "name": "Boxmaster Boxing",
+        "image": "https://eda.yandex/images/3456802/c099625988d0ae0c9ac7977dc3854531-300x300.jpeg",
+        "category": "Combo",
+        "price": 456
+    },
+    {
+        "_id": 9,
+        "name": "Bytes Basket",
+        "image": "https://eda.yandex/images/3456802/c099625988d0ae0c9ac7977dc3854531-300x300.jpeg",
+        "category": "Drinks",
+        "price": 564
+    },
+    
+    {
+        "_id": 10,
+        "name": "Cheeseburger Box",
+        "image": "https://eda.yandex/images/3534679/febb573b5961e059616234e67332ce69-300x300.jpeg",
+        "category": "Additionally",
+        "price": 2325
+    },
+    {
+        "_id": 11,
+        "name": "Twister Box",
+        "image": "https://eda.yandex/images/3534679/febb573b5961e059616234e67332ce69-300x300.jpeg",
+        "category": "What's new",
+        "price": 425
+    },
+    {
+        "_id": 12,
+        "name": "Boxmaster Boxing",
+        "image": "https://eda.yandex/images/3534679/febb573b5961e059616234e67332ce69-300x300.jpeg",
+        "category": "Popular",
+        "price": 570
+    },
+    {
+        "_id": 13,
+        "name": " Twister Kebab Box",
+        "image": "https://eda.yandex/images/3439028/2c47174ea8eb4982ed0b273dc56c7a00-300x300.jpeg",
+        "category": "New items",
+        "price": 500
+    },
+    
+    {
+        "_id": 14,
+        "name": "Cheeseburger Box",
+        "image": "https://eda.yandex/images/3439028/2c47174ea8eb4982ed0b273dc56c7a00-300x300.jpeg",
+        "category": "Boxes",
+        "price": 300
+    },
+    {
+        "_id": 15,
+        "name": "Double Chefburger Box",
+        "image": "https://eda.yandex/images/3439028/2c47174ea8eb4982ed0b273dc56c7a00-300x300.jpeg",
+        "category": "Combo Baskets",
+        "price": 300
+    },
+    {
+        "_id": 16,
+        "name": "Chief Tower Box",
+        "image": "https://eda.yandex/images/3709189/ea0ceaf2681a79a86550602664278a91-300x300.jpeg",
+        "category": "Juicy chicken",
+        "price": 800
+    },
+    {
+        "_id": 17,
+        "name": "Basket Kroketsov",
+        "image": "https://eda.yandex/images/3709189/ea0ceaf2681a79a86550602664278a91-300x300.jpeg",
+        "category": "Snacks",
+        "price": 6500
+    },
+    
+    {
+        "_id": 18,
+        "name": "Sanders Mega Burger Box",
+        "image": "https://eda.yandex/images/3709189/ea0ceaf2681a79a86550602664278a91-300x300.jpeg",
+        "category": "Combo",
+        "price": 210
+    },
+    {
+        "_id": 19,
+        "name": "Standard croquettes",
+        "image": "https://eda.yandex/images/3538649/fe9c4fecf09ef398f2129892046118ae-300x300.jpeg",
+        "category": "Drinks",
+        "price": 1540
+    },
+    
+    {
+        "_id": 20,
+        "name": "Basket Kroketsovjh",
+        "image": "https://eda.yandex/images/3538649/fe9c4fecf09ef398f2129892046118ae-300x300.jpeg",
+        "category": "Additionally",
+        "price": 1030
+    },
+    {
+        "_id": 21,
+        "name": "Twister Combo",
+        "image": "https://eda.yandex/images/3538649/fe9c4fecf09ef398f2129892046118ae-300x300.jpeg",
+        "category": "What's new",
+        "price": 546
+    },
+    {
+        "_id": 22,
+        "name": "Double Chefburger Combo",
+        "image": "https://eda.yandex/images/1962206/b2377a1f080406b48877f09dc9c02c0f-300x300.jpeg",
+        "category": "Popular",
+        "price": 135
+    },
+    {
+        "_id": 23,
+        "name": " Chefburger Combo",
+        "image": "https://eda.yandex/images/1962206/b2377a1f080406b48877f09dc9c02c0f-300x300.jpeg",
+        "category": "New items",
+        "price": 2456
+    },
+    
+    {
+        "_id": 24,
+        "name": "Patty Box Combo",
+        "image": "https://eda.yandex/images/1962206/b2377a1f080406b48877f09dc9c02c0f-300x300.jpeg",
+        "category": "Boxes",
+        "price": 564
+    },
+    {
+        "_id": 25,
+        "name": "Nuggets 16 pcs",
+        "image": "https://eda.yandex/images/3436037/164640f3cd2f36cc9596b424fce01a51-300x300.jpeg",
+        "category": "Combo Baskets",
+        "price": 321
+    },
+    {
+        "_id": 26,
+        "name": "Nuggets 6 pcs",
+        "image": "https://eda.yandex/images/3436037/164640f3cd2f36cc9596b424fce01a51-300x300.jpeg",
+        "category": "Juicy chicken",
+        "price": 766
+    },
+    {
+        "_id": 27,
+        "name": "French fries standard",
+        "image": "https://eda.yandex/images/3436037/164640f3cd2f36cc9596b424fce01a51-300x300.jpeg",
+        "category": "Snacks",
+        "price": 456
+    },
+    
+    {
+        "_id": 28,
+        "name": "Hashbrown",
+        "image": "https://eda.yandex/images/2783965/b575841406205be158327e6aef2d951f-300x300.jpeg",
+        "category": "Combo",
+        "price": 1405
+    },
+    {
+        "_id": 29,
+        "name": "Bites & Free",
+        "image": "https://eda.yandex/images/2783965/b575841406205be158327e6aef2d951f-300x300.jpeg",
+        "category": "Drinks",
+        "price": 2340
+    },
+    
+    {
+        "_id": 30,
+        "name": "Strips 7 pcs",
+        "image": "https://eda.yandex/images/2783965/b575841406205be158327e6aef2d951f-300x300.jpeg",
+        "category": "Additionally",
+        "price": 6000
+    }
+
+    
+   
+]
