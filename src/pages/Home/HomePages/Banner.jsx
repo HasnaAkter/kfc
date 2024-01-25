@@ -3,6 +3,7 @@ import arrow from "../../../assets/icon/back-arrow.png";
 import cart from "../../../assets/icon/svg.svg";
 import banner from "../../../assets/icon/banner.jpg";
 import star from "../../../assets/icon/star.png";
+import inbox from "../../../assets/icon/sms-bubble-speech.png";
 import info from "../../../assets/icon/information-sign.png";
 import set from "../../../assets/icon/set.png";
 import itemData from "../../../../public/item.json";
@@ -29,11 +30,22 @@ const Banner = () => {
   );
   return (
     <div>
+      <div className="fixed bottom-4 left-4">
+        <button
+          onClick={() => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }}
+          className=" bg-yellow-500 hover:bg-gray-300 text-white font-bold py-2 px-4 rounded-full"
+        >
+          <img className="h-5 w-5" src={inbox} alt="" />
+        </button>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 justify-center md:p-24 p-10">
         <div className="md:col-span-1 ">
           <div className=" ">
             <Link
-              to="/"
+              to=""
               className="btn btn-ghost flex justify-start bg-white md:ml-8 hover:bg-gray-100 w-auto h-auto"
             >
               <span className="flex items-center mx-2">
@@ -48,61 +60,65 @@ const Banner = () => {
           <div className="p-5 mt-5 ">
             <p className="px-2 md:px-9 font-medium text-[22px]">Menu</p>
             <Link
-              to="/"
+              to="#item1"
               className="btn btn-ghost ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               What's new
             </Link>{" "}
             <Link
-              to="/"
+             spy={true}
+             smooth={true}
+             offset={-70}
+             duration={500}
+              to="#item1"
               className="btn btn-ghost ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Popular
             </Link>{" "}
             <Link
-              to="/"
+              to="#item2"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               New items
             </Link>
             <Link
-              to="/"
+              to="#item3"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Boxes
             </Link>{" "}
             <Link
-              to="/"
+              to="#item4"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Combo Baskets
             </Link>{" "}
             <Link
-              to="/"
+              to="#item5"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Juicy chicken
             </Link>{" "}
             <Link
-              to="/"
+              to="#item6"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Snacks
             </Link>{" "}
             <Link
-              to="/"
+              to="#item7"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Combo
             </Link>{" "}
             <Link
-              to="/"
+              to="#item8"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Drinks
             </Link>
             <Link
-              to="/"
+              to="#item9"
               className="btn btn-ghost  ml-2 md:ml-4 font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Additionally
@@ -151,113 +167,130 @@ const Banner = () => {
             <div>
               <p className="mt-3">Free delivery – off any order</p>
             </div>
-            <div></div>
           </div>
           <div>
-            <div className="text-black font-bold text-4xl p-5">Popular</div>
-            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
-              {popularItems.map((item) => (
-                <ItemCard
-                  key={item._id}
-                  imgSrc={item.image}
-                  name={item.name}
-                  price={item.price}
-                />
-              ))}
+            <div id="item1">
+              <div className="text-black font-bold text-4xl p-5">Popular</div>
+              <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+                {popularItems.map((item) => (
+                  <ItemCard
+                    key={item._id}
+                    imgSrc={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
+                ))}
+              </div>
             </div>
-            <div className="text-black font-bold text-4xl p-5">New items</div>
-            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
-              {NewitemsItems.map((item) => (
-                <ItemCard
-                  key={item._id}
-                  imgSrc={item.image}
-                  name={item.name}
-                  price={item.price}
-                />
-              ))}
+            <div id="item2">
+              <div className="text-black font-bold text-4xl p-5">New items</div>
+              <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+                {NewitemsItems.map((item) => (
+                  <ItemCard
+                    key={item._id}
+                    imgSrc={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
+                ))}
+              </div>
             </div>
-            <div className="text-black font-bold text-4xl p-5">Boxes</div>
-            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
-              {BoxesItems.map((item) => (
-                <ItemCard
-                  key={item._id}
-                  imgSrc={item.image}
-                  name={item.name}
-                  price={item.price}
-                />
-              ))}
+            <div id="item3">
+              <div className="text-black font-bold text-4xl p-5">Boxes</div>
+              <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+                {BoxesItems.map((item) => (
+                  <ItemCard
+                    key={item._id}
+                    imgSrc={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
+                ))}
+              </div>
             </div>
-            <div className="text-black font-bold text-4xl p-5">
-              Combo Baskets
+            <div id="item4">
+              <div className="text-black font-bold text-4xl p-5">
+                Combo Baskets
+              </div>
+              <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+                {ComboBasketsItems.map((item) => (
+                  <ItemCard
+                    key={item._id}
+                    imgSrc={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
+                ))}
+              </div>
             </div>
-            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
-              {ComboBasketsItems.map((item) => (
-                <ItemCard
-                  key={item._id}
-                  imgSrc={item.image}
-                  name={item.name}
-                  price={item.price}
-                />
-              ))}
+            <div id="item5">
+              <div className="text-black font-bold text-4xl p-5">
+                Juicy chicken
+              </div>
+              <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+                {JuicychickenItems.map((item) => (
+                  <ItemCard
+                    key={item._id}
+                    imgSrc={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
+                ))}
+              </div>
             </div>
-            <div className="text-black font-bold text-4xl p-5">
-              Juicy chicken
+            <div id="item6">
+              <div className="text-black font-bold text-4xl p-5">Snacks</div>
+              <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+                {SnacksItems.map((item) => (
+                  <ItemCard
+                    key={item._id}
+                    imgSrc={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
+                ))}
+              </div>
             </div>
-            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
-              {JuicychickenItems.map((item) => (
-                <ItemCard
-                  key={item._id}
-                  imgSrc={item.image}
-                  name={item.name}
-                  price={item.price}
-                />
-              ))}
+            <div id="item7">
+              <div className="text-black font-bold text-4xl p-5">Combo</div>
+              <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+                {ComboItems.map((item) => (
+                  <ItemCard
+                    key={item._id}
+                    imgSrc={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
+                ))}
+              </div>
             </div>
-            <div className="text-black font-bold text-4xl p-5">Snacks</div>
-            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
-              {SnacksItems.map((item) => (
-                <ItemCard
-                  key={item._id}
-                  imgSrc={item.image}
-                  name={item.name}
-                  price={item.price}
-                />
-              ))}
+            <div id="item8">
+              <div className="text-black font-bold text-4xl p-5">Drinks</div>
+              <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+                {DrinksItems.map((item) => (
+                  <ItemCard
+                    key={item._id}
+                    imgSrc={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
+                ))}
+              </div>
             </div>
-            <div className="text-black font-bold text-4xl p-5">Combo</div>
-            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
-              {ComboItems.map((item) => (
-                <ItemCard
-                  key={item._id}
-                  imgSrc={item.image}
-                  name={item.name}
-                  price={item.price}
-                />
-              ))}
-            </div>
-            <div className="text-black font-bold text-4xl p-5">Drinks</div>
-            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
-              {DrinksItems.map((item) => (
-                <ItemCard
-                  key={item._id}
-                  imgSrc={item.image}
-                  name={item.name}
-                  price={item.price}
-                />
-              ))}
-            </div>
-            <div className="text-black font-bold text-4xl p-5">
-              Additionally
-            </div>
-            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
-              {AdditionallyItem.map((item) => (
-                <ItemCard
-                  key={item._id}
-                  imgSrc={item.image}
-                  name={item.name}
-                  price={item.price}
-                />
-              ))}
+            <div id="item9">
+              <div className="text-black font-bold text-4xl p-5">
+                Additionally
+              </div>
+              <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+                {AdditionallyItem.map((item) => (
+                  <ItemCard
+                    key={item._id}
+                    imgSrc={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
