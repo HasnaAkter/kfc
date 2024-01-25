@@ -4,9 +4,11 @@
         "_id": 1,
         "name": "Basket S Combo",
         "image": "https://eda.yandex/images/3456802/c099625988d0ae0c9ac7977dc3854531-216x188.jpeg",
-        "category": "What's new",
+        "category": "Popular",
         "price": 5700
     },
+   
+   
     {
         "_id": 2,
         "name": "Cheese sauce",
@@ -77,7 +79,7 @@
         "_id": 11,
         "name": "Twister Box",
         "image": "https://eda.yandex/images/3534679/febb573b5961e059616234e67332ce69-300x300.jpeg",
-        "category": "What's new",
+        "category": "Boxes",
         "price": 425
     },
     {
@@ -150,7 +152,7 @@
         "_id": 21,
         "name": "Twister Combo",
         "image": "https://eda.yandex/images/3538649/fe9c4fecf09ef398f2129892046118ae-300x300.jpeg",
-        "category": "What's new",
+        "category": "Combo",
         "price": 546
     },
     {

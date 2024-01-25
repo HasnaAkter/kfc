@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import arrow from "../../../assets/icon/back-arrow.png";
 import cart from "../../../assets/icon/svg.svg";
@@ -6,11 +5,32 @@ import banner from "../../../assets/icon/banner.jpg";
 import star from "../../../assets/icon/star.png";
 import info from "../../../assets/icon/information-sign.png";
 import set from "../../../assets/icon/set.png";
+import itemData from "../../../../public/item.json";
+import ItemCard from "./../../../component/ItemCrad";
+
 const Banner = () => {
+  const itemsData = itemData;
+  const popularItems = itemsData.filter((item) => item.category === "Popular");
+  const NewitemsItems = itemsData.filter(
+    (item) => item.category === "New items"
+  );
+  const BoxesItems = itemsData.filter((item) => item.category === "Boxes");
+  const ComboBasketsItems = itemsData.filter(
+    (item) => item.category === "Combo Baskets"
+  );
+  const JuicychickenItems = itemsData.filter(
+    (item) => item.category === "Juicy chicken"
+  );
+  const SnacksItems = itemsData.filter((item) => item.category === "Snacks");
+  const ComboItems = itemsData.filter((item) => item.category === "Combo");
+  const DrinksItems = itemsData.filter((item) => item.category === "Drinks");
+  const AdditionallyItem = itemsData.filter(
+    (item) => item.category === "Additionally"
+  );
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 justify-center md:p-24 p-10">
-        <div className="md:col-span-1">
+        <div className="md:col-span-1 ">
           <div className=" ">
             <Link
               to="/"
@@ -89,7 +109,8 @@ const Banner = () => {
             </Link>
           </div>
         </div>
-        <div className="md:col-span-2  text-white">
+
+        <div className="md:col-span-2 overflow-auto   text-white">
           <div
             style={{
               backgroundImage: `url('${banner}')`,
@@ -98,6 +119,7 @@ const Banner = () => {
               height: "50vh",
               borderRadius: "10px",
               position: "relative",
+              opacity: 1,
             }}
           >
             <div className="absolute bottom-4 left-4">
@@ -131,9 +153,116 @@ const Banner = () => {
             </div>
             <div></div>
           </div>
+          <div>
+            <div className="text-black font-bold text-4xl p-5">Popular</div>
+            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+              {popularItems.map((item) => (
+                <ItemCard
+                  key={item._id}
+                  imgSrc={item.image}
+                  name={item.name}
+                  price={item.price}
+                />
+              ))}
+            </div>
+            <div className="text-black font-bold text-4xl p-5">New items</div>
+            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+              {NewitemsItems.map((item) => (
+                <ItemCard
+                  key={item._id}
+                  imgSrc={item.image}
+                  name={item.name}
+                  price={item.price}
+                />
+              ))}
+            </div>
+            <div className="text-black font-bold text-4xl p-5">Boxes</div>
+            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+              {BoxesItems.map((item) => (
+                <ItemCard
+                  key={item._id}
+                  imgSrc={item.image}
+                  name={item.name}
+                  price={item.price}
+                />
+              ))}
+            </div>
+            <div className="text-black font-bold text-4xl p-5">
+              Combo Baskets
+            </div>
+            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+              {ComboBasketsItems.map((item) => (
+                <ItemCard
+                  key={item._id}
+                  imgSrc={item.image}
+                  name={item.name}
+                  price={item.price}
+                />
+              ))}
+            </div>
+            <div className="text-black font-bold text-4xl p-5">
+              Juicy chicken
+            </div>
+            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+              {JuicychickenItems.map((item) => (
+                <ItemCard
+                  key={item._id}
+                  imgSrc={item.image}
+                  name={item.name}
+                  price={item.price}
+                />
+              ))}
+            </div>
+            <div className="text-black font-bold text-4xl p-5">Snacks</div>
+            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+              {SnacksItems.map((item) => (
+                <ItemCard
+                  key={item._id}
+                  imgSrc={item.image}
+                  name={item.name}
+                  price={item.price}
+                />
+              ))}
+            </div>
+            <div className="text-black font-bold text-4xl p-5">Combo</div>
+            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+              {ComboItems.map((item) => (
+                <ItemCard
+                  key={item._id}
+                  imgSrc={item.image}
+                  name={item.name}
+                  price={item.price}
+                />
+              ))}
+            </div>
+            <div className="text-black font-bold text-4xl p-5">Drinks</div>
+            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+              {DrinksItems.map((item) => (
+                <ItemCard
+                  key={item._id}
+                  imgSrc={item.image}
+                  name={item.name}
+                  price={item.price}
+                />
+              ))}
+            </div>
+            <div className="text-black font-bold text-4xl p-5">
+              Additionally
+            </div>
+            <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+              {AdditionallyItem.map((item) => (
+                <ItemCard
+                  key={item._id}
+                  imgSrc={item.image}
+                  name={item.name}
+                  price={item.price}
+                />
+              ))}
+            </div>
+          </div>
         </div>
 
-        <div className="hidden lg:block md:col-span-1 rounded-lg bg-white p-4 text-black">
+        <div className="hidden lg:block md:col-span-1 rounded-lg  bg-white p-4 text-black  ">
           <div className="">
             <p className="font-bold text-xl">Cart</p>
           </div>
