@@ -8,10 +8,10 @@ import info from "../../../assets/icon/information-sign.png";
 import set from "../../../assets/icon/set.png";
 import itemData from "../../../../public/item.json";
 import ItemCard from "./../../../component/ItemCrad";
-import React, { useState } from "react";
+
 
 const Banner = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  
 
   const itemsData = itemData;
   const popularItems = itemsData.filter((item) => item.category === "Popular");
@@ -33,7 +33,7 @@ const Banner = () => {
   );
   return (
     <div>
-      <div className="fixed bottom-4 left-4">
+      <div className="fixed bottom-4 left-4 ">
         <button
           onClick={() => {
             document.body.scrollTop = 0;
@@ -50,10 +50,10 @@ const Banner = () => {
       
     
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 justify-center md:p-24 p-10">
-        <div className="md:col-span-1 ">
+        <div className="md:col-span-1 p-10">
           <div className=" ">
             <Link
-              to=""
+              to="/"
               className="btn btn-ghost flex justify-start bg-white md:ml-8 hover:bg-gray-100 w-auto h-auto"
             >
               <span className="flex items-center mx-2">
@@ -68,7 +68,7 @@ const Banner = () => {
           <div className="p-5 mt-5 ">
             <p className="px-2 md:px-9 font-medium text-[22px]">Menu</p>
             <Link
-              to="#item1"
+              to="/popular"
               className="btn btn-ghost ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               What's new
@@ -78,55 +78,55 @@ const Banner = () => {
              smooth={true}
              offset={-70}
              duration={500}
-              to="#item1"
+              to="/popular"
               className="btn btn-ghost ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Popular
             </Link>{" "}
             <Link
-              to="#item2"
+              to="/newitem"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               New items
             </Link>
             <Link
-              to="#item3"
+              to="/Boxesitem"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Boxes
             </Link>{" "}
             <Link
-              to="#item4"
+              to="/comboBas"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Combo Baskets
             </Link>{" "}
             <Link
-              to="#item5"
+              to="/juicy"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Juicy chicken
             </Link>{" "}
             <Link
-              to="#item6"
+              to="/snack"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Snacks
             </Link>{" "}
             <Link
-              to="#item7"
+              to="/comboitem"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Combo
             </Link>{" "}
             <Link
-              to="#item8"
+              to="/drinksitem"
               className="btn btn-ghost  ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Drinks
             </Link>
             <Link
-              to="#item9"
+              to="/addi"
               className="btn btn-ghost  ml-2 md:ml-4 font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
               Additionally
@@ -134,7 +134,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="md:col-span-2 overflow-auto   text-white">
+        <div className="md:col-span-2 overflow-auto  p-10  text-white">
           <div
             style={{
               backgroundImage: `url('${banner}')`,
@@ -204,7 +204,7 @@ const Banner = () => {
               </div>
             </div>
             <div id="item3">
-              <div className="text-black font-bold text-4xl p-5">Boxes</div>
+            <div className="text-black font-bold text-4xl p-5">Boxes</div>
               <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
                 {BoxesItems.map((item) => (
                   <ItemCard
@@ -303,7 +303,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="hidden lg:block md:col-span-1 rounded-lg  bg-white p-4 text-black  ">
+        <div className="hidden lg:block md:col-span-1 rounded-lg p-10 bg-white p-4 text-black  ">
           <div className="">
             <p className="font-bold text-xl">Cart</p>
           </div>

@@ -6,11 +6,6 @@ const Main = () => {
     return (
         <div>
              <Navbar></Navbar>
-             <br />
-             <br />
-             <br />
-             <br />
-             
              <Outlet></Outlet>
              <Footer></Footer>
         </div>
