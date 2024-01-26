@@ -9,10 +9,7 @@ import set from "../../../assets/icon/set.png";
 import itemData from "../../../../public/item.json";
 import ItemCard from "./../../../component/ItemCrad";
 
-
 const Banner = () => {
-  
-
   const itemsData = itemData;
   const popularItems = itemsData.filter((item) => item.category === "Popular");
   const NewitemsItems = itemsData.filter(
@@ -38,7 +35,7 @@ const Banner = () => {
           onClick={() => {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
-            setIsModalOpen(true); 
+            setIsModalOpen(true);
           }}
           className="bg-yellow-500 hover:bg-gray-300 text-white font-bold py-2 px-4 rounded-full"
         >
@@ -46,9 +43,6 @@ const Banner = () => {
         </button>
       </div>
 
-     
-      
-    
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 justify-center md:p-24 p-10">
         <div className="md:col-span-1 p-10">
           <div className=" ">
@@ -74,10 +68,10 @@ const Banner = () => {
               What's new
             </Link>{" "}
             <Link
-             spy={true}
-             smooth={true}
-             offset={-70}
-             duration={500}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               to="/popular"
               className="btn btn-ghost ml-2 md:ml-4  font-medium text-[16px] flex justify-start hover:bg-gray-100 w-auto h-auto"
             >
@@ -204,7 +198,7 @@ const Banner = () => {
               </div>
             </div>
             <div id="item3">
-            <div className="text-black font-bold text-4xl p-5">Boxes</div>
+              <div className="text-black font-bold text-4xl p-5">Boxes</div>
               <div className="card-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
                 {BoxesItems.map((item) => (
                   <ItemCard
